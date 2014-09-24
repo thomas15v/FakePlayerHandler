@@ -13,15 +13,8 @@ import org.tf101wizard.fakeplayerhandler.FakePlayerHandler;
 import org.tf101wizard.fakeplayerhandler.util.FakePlayerUtil;
 import org.tf101wizard.fakeplayerhandler.util.GriefPreventionUtil;
 
-public class PlayerInteractListener
-  implements Listener
+public class PlayerInteractListener implements Listener
 {
-    private final FakePlayerHandler plugin;
-
-    public PlayerInteractListener(FakePlayerHandler plugin) {
-        this.plugin = plugin;
-        
-    }
   @EventHandler(priority=EventPriority.HIGH)
   public void onPlayerInteract(PlayerInteractEvent event)
   {
