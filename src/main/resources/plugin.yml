@@ -1,3 +1,4 @@
 name: FakePlayerHandler
 main: org.tf101wizard.fakeplayerhandler.FakePlayerHandler
 version: 1.0
+depend: [GriefPrevention]
