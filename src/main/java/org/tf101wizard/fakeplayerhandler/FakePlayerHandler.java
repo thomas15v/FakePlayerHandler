@@ -1,6 +1,9 @@
-package FakePlayerHandler;
+package org.tf101wizard.fakeplayerhandler;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.tf101wizard.fakeplayerhandler.listeners.BlockBreakListener;
+import org.tf101wizard.fakeplayerhandler.listeners.BlockPlaceListener;
+import org.tf101wizard.fakeplayerhandler.listeners.PlayerInteractListener;
 
 public final class FakePlayerHandler
   extends JavaPlugin

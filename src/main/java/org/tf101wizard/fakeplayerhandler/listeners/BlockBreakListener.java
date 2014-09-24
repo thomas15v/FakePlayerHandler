@@ -1,4 +1,4 @@
-package FakePlayerHandler;
+package org.tf101wizard.fakeplayerhandler.listeners;
 
 import me.ryanhamshire.GriefPrevention.GriefPrevention;
 import org.bukkit.Location;
@@ -8,19 +8,20 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockPlaceEvent;
+import org.bukkit.event.block.BlockBreakEvent;
+import org.tf101wizard.fakeplayerhandler.FakePlayerHandler;
 
-public class BlockPlaceListener
+public class BlockBreakListener
   implements Listener
 {
     private final FakePlayerHandler plugin;
 
-    BlockPlaceListener(FakePlayerHandler plugin) {
+    BlockBreakListener(FakePlayerHandler plugin) {
         this.plugin = plugin;
         
     }
   @EventHandler(priority=EventPriority.HIGH)
-  public void onBlockPlace(BlockPlaceEvent event)
+  public void onBlockBreak(BlockBreakEvent event)
   {
     String playername = event.getPlayer().getName();
     Player player = event.getPlayer();
