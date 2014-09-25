@@ -8,6 +8,6 @@ import org.bukkit.entity.Player;
 public class FakePlayerUtil {
 
     public static boolean isFakePlayer(Player player){
-        return player.getName().startsWith("[") && player.getName().startsWith("]");
+        return player.getName().startsWith("[") && player.getName().endsWith("]");
     }
 }
